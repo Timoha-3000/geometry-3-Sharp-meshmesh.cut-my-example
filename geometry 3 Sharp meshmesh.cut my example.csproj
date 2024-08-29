@@ -48,6 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="res\132.stl" />
+    <None Include="res\321.stl" />
+    <None Include="res\boxGen.stl" />
+    <None Include="res\cut_result.stl" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\Desktop\работа\библиотеки\geometry3Sharp-master\geometry3Sharp_netstandard.csproj">
