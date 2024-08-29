@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35208.52
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "geometry 3 Sharp meshmesh.cut my example", "geometry 3 Sharp meshmesh.cut my example.csproj", "{BE525E67-9495-4C1D-9ADC-2BA40B71BB94}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "geometry3Sharp_netstandard", "..\..\..\Desktop\работа\библиотеки\geometry3Sharp-master\geometry3Sharp_netstandard.csproj", "{D2A2AF72-6907-4F84-9E14-9F9726886D38}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BE525E67-9495-4C1D-9ADC-2BA40B71BB94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE525E67-9495-4C1D-9ADC-2BA40B71BB94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE525E67-9495-4C1D-9ADC-2BA40B71BB94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE525E67-9495-4C1D-9ADC-2BA40B71BB94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2A2AF72-6907-4F84-9E14-9F9726886D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2A2AF72-6907-4F84-9E14-9F9726886D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2A2AF72-6907-4F84-9E14-9F9726886D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2A2AF72-6907-4F84-9E14-9F9726886D38}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D1BE3751-EF7C-4BE5-996D-83F1BA825386}
+	EndGlobalSection
+EndGlobal
