@@ -22,25 +22,25 @@ namespace geometry_3_Sharp_meshmesh.cut_my_example
             DMesh3 sphereMesh = new DMesh3();
             Sphere3Generator_NormalizedCube sphereGen = new Sphere3Generator_NormalizedCube()
             {
-                Radius = 0.5f,
+                Radius = 0.7f,
                 //Slices = 16,
                 
             };
             sphereMesh = sphereGen.Generate().MakeDMesh();
 
             // Перемещаем сферу, чтобы она пересекалась с коробкой
-            MeshTransforms.Translate(sphereMesh, new Vector3d(0.5, 0.5, 0.5));
+            //MeshTransforms.Translate(sphereMesh, new Vector3d(1.5, 0.5, 0.5));
 
             // Устанавливаем параметры для обрезки мешей
-            MeshMeshCut cutter = new MeshMeshCut();
-            cutter.Target = boxMesh;
-            cutter.CutMesh = sphereMesh;
+            MeshBoolean cutter = new MeshBoolean();
+            cutter.Target = sphereMesh;
+            cutter.Tool = boxMesh;
             cutter.Compute();
-            cutter.RemoveContained();
+            //cutter.RemoveContained();
 
 
             // Выполняем операцию обрезки
-            var success = cutter.Target;
+            var success = cutter.Result;
             {
                 // Результирующий меш после обрезки
 
