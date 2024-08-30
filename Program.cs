@@ -14,14 +14,14 @@ namespace geometry_3_Sharp_meshmesh.cut_my_example
             // Вершины куба размером 1x1x1
             Vector3d[] vertices = new Vector3d[]
             {
-            new Vector3d(0, 0, 0), // 0
-            new Vector3d(1, 0, 0), // 1
-            new Vector3d(1, 1, 0), // 2
-            new Vector3d(0, 1, 0), // 3
-            new Vector3d(0, 0, 1), // 4
-            new Vector3d(1, 0, 1), // 5
-            new Vector3d(1, 1, 1), // 6
-            new Vector3d(0, 1, 1)  // 7
+                new Vector3d(0, 0, 0), // 0
+                new Vector3d(300, 0, 0), // 1
+                new Vector3d(300, 300, 0), // 2
+                new Vector3d(0, 300, 0), // 3
+                new Vector3d(0, 0, 40), // 4
+                new Vector3d(300, 0, 40), // 5
+                new Vector3d(300, 300, 40), // 6
+                new Vector3d(0, 300, 40)  // 7
             };
 
             // Список треугольников куба
@@ -68,9 +68,11 @@ namespace geometry_3_Sharp_meshmesh.cut_my_example
                 mesh1.AppendTriangle(v0, v1, v2);
             }
 
+            MeshTransforms.Translate(mesh1, new Vector3d(-150, -150, 10));
             var sphere = new Sphere3Generator_NormalizedCube();
 
-            var mesh2 = sphere.Generate().MakeDMesh();
+            //var mesh2 = sphere.Generate().MakeDMesh();
+            var mesh2 = StandardMeshReader.ReadMesh("5.stl");
 
             // Устанавливаем параметры для обрезки мешей
             MeshMeshCut cutter = new MeshMeshCut();
@@ -83,6 +85,7 @@ namespace geometry_3_Sharp_meshmesh.cut_my_example
             var success = cutter.Target;
 
             StandardMeshWriter.WriteMesh("cut_result.stl", success, WriteOptions.Defaults);
+            StandardMeshWriter.WriteMesh("cutTool.stl", mesh1, WriteOptions.Defaults);
         }
 
         // Функция добавления вершины, если она еще не добавлена
