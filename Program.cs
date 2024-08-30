@@ -26,31 +26,31 @@ namespace geometry_3_Sharp_meshmesh.cut_my_example
 
             // Список треугольников куба
             List<Triangle3d> triangles = new List<Triangle3d>()
-        {
-            // Нижняя грань (0, 1, 2, 3)
-            new Triangle3d(vertices[0], vertices[1], vertices[2]),
-            new Triangle3d(vertices[0], vertices[2], vertices[3]),
+            {
+                // Нижняя грань (0, 1, 2, 3)
+                new Triangle3d(vertices[0], vertices[1], vertices[2]),
+                new Triangle3d(vertices[0], vertices[2], vertices[3]),
 
-            // Верхняя грань (4, 5, 6, 7)
-            new Triangle3d(vertices[4], vertices[5], vertices[6]),
-            new Triangle3d(vertices[4], vertices[6], vertices[7]),
+                // Верхняя грань (4, 5, 6, 7)
+                new Triangle3d(vertices[4], vertices[5], vertices[6]),
+                new Triangle3d(vertices[4], vertices[6], vertices[7]),
 
-            // Передняя грань (0, 1, 5, 4)
-            new Triangle3d(vertices[0], vertices[1], vertices[5]),
-            new Triangle3d(vertices[0], vertices[5], vertices[4]),
+                // Передняя грань (0, 1, 5, 4)
+                new Triangle3d(vertices[0], vertices[1], vertices[5]),
+                new Triangle3d(vertices[0], vertices[5], vertices[4]),
 
-            // Задняя грань (3, 2, 6, 7)
-            new Triangle3d(vertices[3], vertices[2], vertices[6]),
-            new Triangle3d(vertices[3], vertices[6], vertices[7]),
+                // Задняя грань (3, 2, 6, 7)
+                new Triangle3d(vertices[3], vertices[2], vertices[6]),
+                new Triangle3d(vertices[3], vertices[6], vertices[7]),
 
-            // Левая грань (0, 3, 7, 4)
-            new Triangle3d(vertices[0], vertices[3], vertices[7]),
-            new Triangle3d(vertices[0], vertices[7], vertices[4]),
+                // Левая грань (0, 3, 7, 4)
+                new Triangle3d(vertices[0], vertices[3], vertices[7]),
+                new Triangle3d(vertices[0], vertices[7], vertices[4]),
 
-            // Правая грань (1, 2, 6, 5)
-            new Triangle3d(vertices[1], vertices[2], vertices[6]),
-            new Triangle3d(vertices[1], vertices[6], vertices[5])
-        };
+                // Правая грань (1, 2, 6, 5)
+                new Triangle3d(vertices[1], vertices[2], vertices[6]),
+                new Triangle3d(vertices[1], vertices[6], vertices[5])
+            };
 
             // Создаем пустой меш
             DMesh3 mesh1 = new DMesh3();
