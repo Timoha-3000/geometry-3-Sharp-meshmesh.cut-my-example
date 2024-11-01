@@ -43,14 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MeshExtrude.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="res\132.stl" />
+    <None Include="res\2cub.stl" />
     <None Include="res\321.stl" />
     <None Include="res\boxGen.stl" />
+    <None Include="res\cube.stl" />
     <None Include="res\cut_result.stl" />
   </ItemGroup>
   <ItemGroup>
